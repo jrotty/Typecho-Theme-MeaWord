@@ -25,7 +25,7 @@
 <script type="text/javascript" src="<?php $this->options->themeUrl('assets/js/jquery.min.js'); ?>" id="jquery-min-js"></script>
 <?php echo $this->options->statistics?:''; ?>
 <?php $this->header(); ?>
-<?php $bannerIdsArr = explode(",", $this->options->bannerIds);?>
+<?php $bannerIdsArr = explode(",", $this->options->bannerIds?:'');?>
 </head>
 <body class="home blog" >
 <style>:root{--bs-main:<?php echo $this->options->mainColor?:'#b95d40'?>;--bs-backguound:<?php echo $this->options->backgroundColor?:'#e6dece'?>}</style>
